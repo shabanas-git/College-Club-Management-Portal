@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Member Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+
+        <div class="logo">
+            CLUB HUB
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+
+        <a href="index.html" class="btn">
+            Back Home
+        </a>
+
+    </nav>
+
+    <!-- Registration Form -->
+
+    <div class="container">
+
+        <h1 style="text-align:center; color:#003366; margin-bottom:25px;">
+            CLUB MEMBER REGISTRATION
+        </h1>
+
+        <form>
+
+            <label for="name">
+                Full Name <span style="color:red;">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="studentid">
+                Student ID <span style="color:red;">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="studentid"
+                name="studentid"
+                placeholder="Enter your Student ID"
+                required
+            >
+
+            <label for="email">
+                Email Address <span style="color:red;">*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+            >
+
+            <label for="department">
+                Department <span style="color:red;">*</span>
+            </label>
+
+            <select
+                id="department"
+                name="department"
+                required
+            >
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option>
+                    Computer Science Engineering
+                </option>
+
+                <option>
+                    Information Technology
+                </option>
+
+                <option>
+                    Electrical Engineering
+                </option>
+
+                <option>
+                    Mechanical Engineering
+                </option>
+
+                <option>
+                    Civil Engineering
+                </option>
+
+                <option>
+                    Electronics and Communication Engineering
+                </option>
+
+            </select>
+
+            <label for="club">
+                Select Club
+            </label>
+
+            <select
+                id="club"
+                name="club"
+            >
+
+                <option>
+                    Coding Club
+                </option>
+
+                <option>
+                    Robotics Club
+                </option>
+
+                <option>
+                    Cultural Club
+                </option>
+
+                <option>
+                    Sports Club
+                </option>
+
+                <option>
+                    Literary Club
+                </option>
+
+                <option>
+                    Eco Club
+                </option>
+
+                <option>
+                    Social Service Club
+                </option>
+
+            </select>
+
+            <label for="motivation">
+                Why do you want to join?
+            </label>
+
+            <textarea
+                id="motivation"
+                name="motivation"
+                rows="5"
+                placeholder="Write your interest and motivation..."
+            ></textarea>
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Benefits Section -->
+
+    <section class="about">
+
+        <h2>
+            Why Join a Club?
+        </h2>
+
+        <p>
+            Joining a college club helps students develop
+            leadership qualities, improve communication,
+            build technical and non-technical skills,
+            participate in competitions, and create
+            lifelong friendships.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>
+            CLUB HUB
+        </h2>
+
+        <p>
+            Build Skills • Create Memories • Lead the Future
+        </p>
+
+        <br>
+
+        <p>
+            Email: clubs@college.edu
+        </p>
+
+        <p>
+            Phone: +91 9876543210
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 College Club Management Portal
+        </p>
+
+    </footer>
+    <div id="successPopup" class="popup">
+    <div class="popup-content">
+        <div class="tick">✔</div>
+        <h2>Registration Successful!</h2>
+        <p>Thank you for joining our club.<br>We look forward to seeing you at our upcoming events.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
